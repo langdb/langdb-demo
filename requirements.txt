@@ -2,6 +2,6 @@ langchain
 langchain_community
 langchain_core
 langchain_openai
-requestsz
 tavily-python
 openai
+wikipedia
