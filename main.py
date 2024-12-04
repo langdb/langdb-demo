@@ -17,8 +17,9 @@ import uuid
 
 
 api_base = "https://api.staging.langdb.ai"  # LangDB API base URL
-
-default_headers = {"x-project-id": "xxxx"} ## Enter LangDB Project ID
+pre_defined_run_id =  uuid.uuid4()
+default_headers = {"x-project-id": "xxxx", ## Enter LangDB Project ID
+                  "x-run-id": pre_defined_run_id} 
 os.environ['OPENAI_API_KEY'] = 'xxxxx' ## Enter LangDB API Key
 os.environ['TAVILY_API_KEY'] = 'xxxxx' ## Enter Tavily API Key
 
